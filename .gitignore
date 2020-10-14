@@ -1,23 +1,23 @@
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
 # dependencies
-/1_aula/web/node_modules
-/1_aula/web/.pnp
+/web/node_modules
+/web/.pnp
 .pnp.js
 
 # testing
-/1_aula/web/coverage
+/web/coverage
 
 # production
-/1_aula/web/build
+/web/build
 
 # misc
-/1_aula/web/.DS_Store
-/1_aula/web/.env.local
-/1_aula/web/.env.development.local
-/1_aula/web/.env.test.local
-/1_aula/web/.env.production.local
+/web/.DS_Store
+/web/.env.local
+/web/.env.development.local
+/web/.env.test.local
+/web/.env.production.local
 
-/1_aula/web/npm-debug.log*
-/1_aula/web/yarn-debug.log*
-/1_aula/web/yarn-error.log*
+/web/npm-debug.log*
+/web/yarn-debug.log*
+/web/yarn-error.log*
