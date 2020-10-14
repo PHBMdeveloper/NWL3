@@ -1,15 +1,22 @@
 import React from 'react';
 
-function Title() {
+interface TitleProps {
+  text: string
+}
+
+function Title(props: TitleProps) {
   return(
-    <h1>Hello NLW3 teste</h1>
+  <h1>{props.text}</h1>
   )
 }
 
 function App() {
   return (
     <div className="App">
-      <Title/>
+      <Title text="Título 1"/>
+      <Title text="Título 2"/>
+      <Title text="Título 3"/>
+      <Title text="Título 4"/>
     </div>
   );
 }
