@@ -4,4 +4,6 @@ orbs:
 workflows:
   node-tests:
     jobs:
-      - 1_aula/web
+      - run: # print the name of the branch we're on
+          name: "What branch am I on?"
+          command: echo ${CIRCLE_BRANCH}
