@@ -5,3 +5,5 @@ workflows:
   node-tests:
     jobs:
       - install-node-example
+paths:
+- 1_aula/web
