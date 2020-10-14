@@ -2,7 +2,6 @@ version: 2.1
 orbs:
   node: circleci/node@3.0.0
 workflows:
-  working_directory: 1_aula/web
   node-tests:
     jobs:
-      - node/test
+      - 1_aula/web
