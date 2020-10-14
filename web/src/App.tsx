@@ -1,14 +1,17 @@
 import React from 'react';
 
-function Title() {
+function Title(props) {
   return(
-    <h1>Hello NLW3 teste</h1>
+  <h1>{}</h1>
   )
 }
 
 function App() {
   return (
     <div className="App">
+      <Title/>
+      <Title/>
+      <Title/>
       <Title/>
     </div>
   );
