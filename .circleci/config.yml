@@ -2,8 +2,8 @@ version: 2.1
 orbs:
   node: circleci/node@3.0.0
 workflows:
-  node-tests:
+  node:
     jobs:
       - run: # print the name of the branch we're on
-          name: "What branch am I on?"
+          name: "What branch am I on??"
           command: echo ${CIRCLE_BRANCH}
