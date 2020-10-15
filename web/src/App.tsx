@@ -2,6 +2,7 @@ import React from 'react';
 import './styles/global.css';
 import './styles/pages/landding.css';
 import logoImg from './images/logo.svg'
+import { FiArrowRight } from 'react-icons/fi'
 
 function App() {
   return (
@@ -15,12 +16,12 @@ function App() {
 
         <div className="location">
           <strong>São Paulo</strong>
-          <span>São Paulo</span>
+          <span>Brasil</span>
         </div>
+        
         <a href="" className="enter-app">
-          >
+          <FiArrowRight size={26} color="rgba(0, 0, 0, 0.6)" />
         </a>
-
       </div>
     </div>
   );
