@@ -5,7 +5,7 @@ app.use(express.json())
 
 
 app.post('/users/:id', (request, response) =>{
-    console.log(request.query)
+    console.log('query', request.query)
     return response.json({message: 'OK'})
 })
 
