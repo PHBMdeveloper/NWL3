@@ -1,8 +1,18 @@
 import { Request, Response } from "express";
+import { realpathSync } from "fs";
 import { getRepository } from 'typeorm'
 import Orphanage from '../models/Orphanage'
 
 export default {
+  async index(request: Request, response: Response) {
+    const orphanagesRepository = getRepository(Orphanage)
+
+    const orphanages = await orphanagesRepository.find()
+
+    return response.json(orphanages)
+
+  },
+
   async create(request: Request, response: Response) {
     const {
       name,
@@ -28,7 +38,7 @@ export default {
     })
 
     await orphanagesRepository.save(orphanage)
-    
+
     return response.status(201).json(orphanage)
   }
 };
