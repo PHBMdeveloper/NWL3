@@ -1,6 +1,6 @@
 import { Request, Response } from "express";
-import { realpathSync } from "fs";
 import { getRepository } from 'typeorm'
+import orphanageView from "../views/orphanages_views";
 import Orphanage from '../models/Orphanage'
 
 export default {
@@ -11,7 +11,8 @@ export default {
       relations: ['images']
     })
 
-    return response.json(orphanages)
+    // return response.json(orphanages)
+    return response.json(orphanageView.renderMany(orphanages))
 
   },
 
@@ -23,7 +24,8 @@ export default {
       relations: ['images']
     })
 
-    return response.json(orphanage)
+    // return response.json(orphanage)
+    return response.json(orphanageView.render(orphanage))
 
   },
 
