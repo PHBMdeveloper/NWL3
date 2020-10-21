@@ -1,0 +1,18 @@
+{
+    "type": "sqlite",
+    "database": "./backend/src/database/database.sqlite",
+    "entities": [
+        "./backend/src/database/entity/**/*.ts"
+    ],
+    "migrations": [
+        "./backend/src/database/migrations/**/*.ts"
+    ],
+    "subscribers": [
+        "./backend/src/database/subscriber/**/*.ts"
+    ],
+    "cli": {
+        "entitiesDir": "./backend/src/database/entity",
+        "migrationsDir": "./backend/src/database/migrations",
+        "subscribersDir": "./backend/src/database/subscriber"
+    }
+}
