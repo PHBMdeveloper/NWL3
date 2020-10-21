@@ -2,7 +2,7 @@
     "type": "sqlite",
     "database": "./backend/src/database/database.sqlite",
     "entities": [
-        "./backend/src/database/entity/**/*.ts"
+        "./backend/src/models/**/*.ts"
     ],
     "migrations": [
         "./backend/src/database/migrations/**/*.ts"
